@@ -1991,3 +1991,149 @@ select.form-control { cursor: pointer; }
   .reveal, .reveal-left, .reveal-right { opacity: 1; transform: none; }
 }
 
+
+/* ============================
+   RESPONSIVE 340px — CORRECTIONS
+   ============================ */
+
+@media (max-width: 360px) {
+
+  /* --- CONTAINER --- */
+  .container { padding: 0 14px; }
+
+  /* --- NAVBAR --- */
+  .navbar-inner { height: 60px; gap: 8px; }
+  .navbar-brand { gap: 8px; }
+  .navbar-brand .brand-logo { width: 34px; height: 34px; font-size: 1rem; }
+  .navbar-brand .brand-name { font-size: 1rem; }
+  .navbar-brand .brand-sub { display: none; }
+  .lang-toggle { padding: 5px 10px; font-size: 0.72rem; }
+  .nav-btn-icon { width: 32px; height: 32px; font-size: 0.8rem; }
+  .nav-menu { top: 60px; }
+
+  /* --- HERO --- */
+  .hero { min-height: 480px; height: auto; padding-bottom: 60px; }
+  .hero-content { padding: 0 14px; align-items: flex-end; padding-bottom: 70px; }
+  .hero-content-inner { max-width: 100%; }
+  .hero-eyebrow { font-size: 0.68rem; letter-spacing: 0.08em; margin-bottom: 12px; }
+  .hero-content h1 { font-size: 1.7rem; margin-bottom: 12px; }
+  .hero-content p { font-size: 0.92rem; margin-bottom: 20px; }
+  .hero-btns { flex-direction: column; align-items: stretch; gap: 10px; }
+  .hero-btns .btn { width: 100%; justify-content: center; padding: 12px 20px; font-size: 0.85rem; }
+  .hero-indicators { bottom: 16px; }
+
+  /* --- PAGE HERO (sous-pages) --- */
+  .page-hero { margin-top: 60px; padding: 48px 0 36px; }
+  .page-hero h1 { font-size: 1.6rem; }
+  .page-hero p { font-size: 0.9rem; }
+
+  /* --- SECTION --- */
+  .section { padding: 48px 0; }
+  .section-head, .section-header { margin-bottom: 32px; }
+  .section-header h2, .section-head h2 { font-size: 1.4rem; }
+
+  /* --- QUICK LINKS --- */
+  .quick-links { padding: 28px 0; }
+  .quick-links-grid { grid-template-columns: 1fr; gap: 1px; }
+  .quick-link-item { padding: 20px 14px; gap: 8px; }
+  .quick-link-item .icon { width: 42px; height: 42px; font-size: 1.1rem; }
+  .quick-link-item h4 { font-size: 0.9rem; }
+  .quick-link-item p { font-size: 0.78rem; }
+
+  /* --- PRESIDENT CARD --- */
+  .president-card { flex-direction: column; padding: 24px 16px; gap: 20px; text-align: center; }
+  .president-photo, .president-photo-placeholder { width: 100px; height: 100px; font-size: 2.2rem; }
+  .president-quote blockquote { font-size: 1rem; }
+  .quote-mark { font-size: 3.5rem; }
+
+  /* --- DOMAINS --- */
+  .domains-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .domain-card { padding: 22px 12px; }
+  .domain-card .domain-icon { width: 48px; height: 48px; font-size: 1.3rem; margin-bottom: 12px; }
+  .domain-card h4 { font-size: 0.85rem; }
+  .domain-card p { font-size: 0.78rem; }
+
+  /* --- STATS BANNER --- */
+  .stats-banner { padding: 36px 0; }
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .stat-item h3 { font-size: 1.8rem; }
+  .stat-item p { font-size: 0.8rem; }
+
+  /* --- NEWS GRID --- */
+  .news-grid { grid-template-columns: 1fr; gap: 16px; }
+  .news-card-img { height: 140px; }
+  .news-card-body { padding: 16px; }
+  .news-card-body h4 { font-size: 0.92rem; }
+
+  /* --- TESTIMONIALS --- */
+  .testimonials-grid { grid-template-columns: 1fr; gap: 16px; }
+  .testimonial-card { padding: 20px 16px; }
+
+  /* --- GALLERY --- */
+  .gallery-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+  /* --- ORG CHART --- */
+  .org-members-grid { grid-template-columns: 1fr; gap: 14px; }
+  .org-members-grid .member-card { min-height: unset; }
+  .org-row { gap: 8px; }
+  .org-row .org-box { min-width: 120px; font-size: 0.72rem; padding: 10px 14px; }
+  .org-nodes { gap: 8px; }
+  .org-node { min-width: 120px; padding: 12px 14px; }
+  .org-node h5 { font-size: 0.75rem; }
+  .values-grid { grid-template-columns: 1fr; gap: 12px; }
+  .value-card { padding: 20px 16px; }
+
+  /* --- CONTACT --- */
+  .contact-grid { grid-template-columns: 1fr; gap: 24px; }
+  .contact-ic { width: 38px; height: 38px; }
+  .contact-ic svg { width: 18px; height: 18px; }
+
+  /* --- FORMS --- */
+  .form-grid-2, .form-row { grid-template-columns: 1fr; gap: 12px; }
+  .form-card, .form-group { padding: 16px; }
+  .form-control { padding: 10px 12px; font-size: 0.9rem; }
+  .btn { padding: 11px 20px; font-size: 0.85rem; }
+  .btn-block { width: 100%; justify-content: center; }
+
+  /* --- FOOTER --- */
+  .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+  footer { padding: 40px 0 0; }
+  .footer-col h5 { font-size: 0.82rem; margin-bottom: 12px; }
+  .footer-links a { font-size: 0.82rem; }
+  .footer-bottom { flex-direction: column; text-align: center; gap: 8px; padding: 16px 0; }
+  .footer-bottom p { font-size: 0.75rem; }
+  .social-btn { width: 34px; height: 34px; }
+
+  /* --- COOKIE BANNER --- */
+  .cookie-banner { padding: 14px; gap: 10px; }
+  .cookie-banner p { font-size: 0.82rem; }
+  .cookie-btns { width: 100%; justify-content: stretch; }
+  .cookie-btns .btn-cookie-accept,
+  .cookie-btns .btn-cookie-decline { flex: 1; text-align: center; justify-content: center; padding: 8px 12px; font-size: 0.8rem; }
+
+  /* --- CARDS --- */
+  .card { padding: 20px 16px; }
+  .partner-logo { width: 110px; height: 60px; font-size: 0.72rem; }
+
+  /* --- CTA BAND --- */
+  .cta-band { padding: 28px 16px; border-radius: var(--radius); }
+  .cta-band h2 { font-size: 1.3rem; }
+  .cta-band p { font-size: 0.88rem; }
+  .newsletter-form { flex-direction: column; }
+  .newsletter-form input { min-width: unset; width: 100%; border-radius: var(--radius-sm); }
+
+  /* --- SPLIT LAYOUT --- */
+  .split, .split.reverse { grid-template-columns: 1fr; gap: 24px; }
+  .split-img { border-radius: var(--radius); }
+
+  /* --- FEATURE NEWS --- */
+  .feature-news { grid-template-columns: 1fr; }
+  .feature-news-img { min-height: 180px; }
+  .feature-news-body { padding: 20px 16px; }
+  .feature-news-body h2 { font-size: 1.2rem; }
+
+  /* --- MISC --- */
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.1rem; }
+}
